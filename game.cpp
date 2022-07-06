@@ -24,15 +24,15 @@ void Game::initWindow()
 
 void Game::textures()
 {
-  this->wallpaper.loadFromFile("assets/bgalign.jpg");
-  this->vtile[0].loadFromFile("assets/blue.png");
-  this->vtile[1].loadFromFile("assets/black.png");
-  this->vtile[2].loadFromFile("assets/yellow.png");
-  this->vtile[3].loadFromFile("assets/green.png");
-  this->vtile[4].loadFromFile("assets/pink.png");
-  this->vtile[5].loadFromFile("assets/red.png");
-  this->font.loadFromFile("assets/Mandalore.otf");
-  this->font1.loadFromFile("assets/BIOWEAPON.otf");
+  this->wallpaper.loadFromFile("/assets/bgalign.jpg");
+  this->vtile[0].loadFromFile("/assets/blue.png");
+  this->vtile[1].loadFromFile("/assets/black.png");
+  this->vtile[2].loadFromFile("/assets/yellow.png");
+  this->vtile[3].loadFromFile("/assets/green.png");
+  this->vtile[4].loadFromFile("/assets/pink.png");
+  this->vtile[5].loadFromFile("/assets/red.png");
+  this->font.loadFromFile("/assets/Mandalore.otf");
+  this->font1.loadFromFile("/assets/BIOWEAPON.otf");
 }
 
 Game::Game() //Constructor
@@ -62,7 +62,7 @@ void Game::terminal_log(std::string s)
 
 void Game::playMusic()
 {
-  music.openFromFile("assets/dreams.wav");
+  music.openFromFile("/assets/dreams.wav");
   music.setLoop(true);
   music.play();
 }
